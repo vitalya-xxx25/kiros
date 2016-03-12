@@ -11,7 +11,15 @@ return [
     'basePath' => dirname(__DIR__),
     'controllerNamespace' => 'backend\controllers',
     'bootstrap' => ['log'],
-    'modules' => [],
+    'modules' => [
+        'permit' => [
+            'class' => 'developeruz\db_rbac\Yii2DbRbac',
+            'params' => [
+                'userClass' => '\common\models\User'
+            ],
+//            'layout' => '//admin',
+        ],
+    ],
     'components' => [
         'user' => [
             'identityClass' => 'common\models\User',
