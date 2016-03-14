@@ -1,0 +1,63 @@
+body {
+	font-size:12px;
+	color: #2F2F2F;
+	background-color: #E6E6E6;
+}
+
+.form-table-general th {
+    width: 70px;
+}
+
+* {
+	margin: 0; 
+	padding: 0; 
+	line-height: 1.5; 
+	font-style: normal; 
+	font-weight: normal; 
+}
+
+.form-table-general {
+	width: 270px;
+}
+
+#login-form form {
+	padding: 0;
+}
+
+#login-form {
+	display: block; 
+	position: absolute; 
+	z-index: 1001; 
+	outline: 0px none;
+	height: auto; 
+	width: 300px;
+	top: 50%;
+	left: 50%;
+	margin-top: -90px;
+	margin-left: -150px;
+}
+
+#login-form .ui-dialog-content {
+	overflow: visible;
+}
+
+#login-form table{
+	margin:  10px;
+	
+}
+
+#login-form .pre-box{
+	width:25px;
+	padding-left:5px;
+}
+
+.preloader {
+    float: right;
+    margin-right: 12px;
+    margin-top: 11px;
+}
+
+#login .ui-dialog {
+    box-shadow: none;
+}
+
