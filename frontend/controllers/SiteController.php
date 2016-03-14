@@ -149,8 +149,12 @@ class SiteController extends Controller
     public function actionSignup()
     {
         $model = new SignupForm();
+        
         if ($model->load(Yii::$app->request->post())) {
             if ($user = $model->signup()) {
+                $userRole = Yii::$app->authManager->getRole('user_role');
+                Yii::$app->authManager->assign($userRole, $user->getId());
+                
                 if (Yii::$app->getUser()->login($user)) {
                     return $this->goHome();
                 }

@@ -36,9 +36,9 @@ AppAsset::register($this);
     ]);
     $menuItems = [
         ['label' => 'Главная', 'url' => ['/site/index']],
-        ['label' => 'Роли', 'url' => ['/permit/access/role']],
-        ['label' => 'Права доступа', 'url' => ['/permit/access/permission']],
-        ['label' => 'Пользователи', 'url' => ['/user']],
+        ['label' => 'Роли', 'url' => ['/permit/access/role'], 'visible' => Yii::$app->user->can('permit/access/role')],
+        ['label' => 'Права доступа', 'url' => ['/permit/access/permission'], 'visible' => Yii::$app->user->can('permit/access/permission')],
+        ['label' => 'Пользователи', 'url' => ['/user'], 'visible' => Yii::$app->user->can('user')],
     ];
     if (Yii::$app->user->isGuest) {
         $menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];

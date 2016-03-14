@@ -19,32 +19,22 @@ class SiteController extends Controller
     public function behaviors()
     {
         return [
-//            'access' => [
-//                'class' => AccessControl::className(),
-//                'rules' => [
-//                    [
-//                        'actions' => ['*'],
-//                        'allow' => true,
-//                        'roles' => ['admin'],
-//                    ],
-//                ],
-//            ],
             'as AccessBehavior' => [
                 'class' => AccessBehavior::className(),
                 'rules' =>
-                ['site' =>
-                    [
+                    ['site' =>
                         [
-                            'actions' => ['login', 'index'],
-                            'allow' => true,
-                        ],
-                        [
-                            'actions' => ['*'],
-                            'allow' => true,
-                            'roles' => ['admin_role'],
-                        ],
+                            [
+                                'actions' => ['login', 'index', 'error', 'logout'],
+                                'allow' => true,
+                            ],
+                            [
+                                'actions' => ['*'],
+                                'allow' => true,
+                                'roles' => ['admin_role', 'super_admin_role'],
+                            ],
+                        ]
                     ]
-                ]
             ],
             'verbs' => [
                 'class' => VerbFilter::className(),
