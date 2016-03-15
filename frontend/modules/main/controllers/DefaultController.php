@@ -57,4 +57,14 @@ class DefaultController extends Controller
             'selectedArts'  => $this->_getPrevCurrNextArticlesBySectionId($id, 1)
         ]);
     }
+    
+    public function actionTarif() {
+        $this->layout = "blog";
+        return $this->render('tarif');
+    }
+    
+    public function actionAbout() {
+        $this->layout = "blog";
+        return $this->render('about');
+    }
 }

@@ -104,10 +104,8 @@
                                                         Моб: +7 978 080-12-81<br>
                                                         E-mail: <a href="mailto:kirosgroup2011@gmail.com">kirosgroup2011@gmail.com</a>
                                                         <p>
-                                                            <a href="http://kirosgroup.ru/tarif"><br>ТАРИФЫ</a><br>
-                                                            <a title="О КОМПАНИИ" href="http://kirosgroup.ru/component/content/article/9-uncategorised/89-o-kompanii-2?Itemid=437">
-                                                                О КОМПАНИИ
-                                                            </a>
+                                                            <a title="ТАРИФЫ" href="<?php echo \yii\helpers\Url::to(['/main/default/tarif'])?>">ТАРИФЫ</a><br>
+                                                            <a title="О КОМПАНИИ" href="<?php echo \yii\helpers\Url::to(['/main/default/about'])?>">О КОМПАНИИ</a>
                                                         </p>
                                                     </div>
                                                 </div>
