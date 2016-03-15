@@ -67,6 +67,9 @@ class Articles extends \yii\db\ActiveRecord
             $this->section      = $section['id'];
             $this->sectionTitle = $section['title'];
         }
+        
+//        $this->created_at = Yii::$app->formatter->asDatetime($this->created_at);
+//        $this->updated_at = Yii::$app->formatter->asDatetime($this->updated_at);
     }
     
     public function afterSave($insert, $changedAttributes){
@@ -115,5 +118,16 @@ class Articles extends \yii\db\ActiveRecord
             'deleted' => 'Deleted',
             'sequenceNumber' => 'Sequence Number',
         ];
+    }
+    
+    public function getArticlesBySectionId($sectionId) {
+        $query = new \yii\db\Query();
+        $query->addSelect(['*'])
+            ->from ([Articles::tableName().' a'])
+            ->innerJoin(Articles2sections::tableName().' a2s','a2s.sectionId = '.$sectionId)
+            ->where('a.id = a2s.articleId')
+            ->orderBy(['sequenceNumber' => SORT_ASC])
+            ->limit(4);
+        return $query->all();
     }
 }

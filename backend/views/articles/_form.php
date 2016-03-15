@@ -19,7 +19,7 @@ use yii\widgets\ActiveForm;
     <?= $form->field($model, 'text')->textarea(['rows' => 6]) ?>
 
     <?= $form->field($model, 'section')->dropDownList(
-        common\models\Sections::getAll(), 
+        common\models\Sections::getAll(),    
         ['prompt' => 'Выберите раздел...']    
     ) ?>
     

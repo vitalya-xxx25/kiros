@@ -54,38 +54,18 @@
                                                     <h3 class="sppb-addon-title" style="color:#404040;">Новости</h3>
                                                     <div class="sppb-addon-content">  
                                                         <div class="latestnews">
-                                                            <div itemscope="" itemtype="http://schema.org/Article">
-                                                                <a href="http://kirosgroup.ru/component/content/article/84-novosti/83-tseny-na-elektricheskuyu-energiyu-dlya-predpriyatij-minoborony-rossii-s-2015-goda-vyrastut?Itemid=437" itemprop="url">
-                                                                    <span itemprop="name">
-                                                                        Цены на электрическую энергию для предприятий Минобороны России с 2015 года вырастут			
-                                                                    </span>
-                                                                </a>
-                                                                <small>01 Июнь 2015</small>
-                                                            </div>
-                                                            <div itemscope="" itemtype="http://schema.org/Article">
-                                                                <a href="http://kirosgroup.ru/component/content/article/84-novosti/85-24-aya-mezhdunarodnaya-vystavka-elektro-2015?Itemid=437" itemprop="url">
-                                                                    <span itemprop="name">
-                                                                        24-ая международная выставка «ЭЛЕКТРО 2015»	
-                                                                    </span>
-                                                                </a>
-                                                                <small>30 Май 2015</small>
-                                                            </div>
-                                                            <div itemscope="" itemtype="http://schema.org/Article">
-                                                                <a href="http://kirosgroup.ru/component/content/article/84-novosti/84-tekhnologicheskoe-prisoedinenie-za-550-rublej-protsedura-narushaetsya-setevymi-organizatsiyami?Itemid=437" itemprop="url">
-                                                                    <span itemprop="name">
-                                                                        Технологическое присоединение за 550 рублей: процедура нарушается сетевыми организациями			
-                                                                    </span>
-                                                                </a>
-                                                                <small>01 Май 2015</small>
-                                                            </div>
-                                                            <div itemscope="" itemtype="http://schema.org/Article">
-                                                                <a href="http://kirosgroup.ru/component/content/article/84-novosti/81-23-aprelya-budut-ob-yavleny-laureaty-premii-globalnaya-energiya-2015-goda?Itemid=437" itemprop="url">
-                                                                    <span itemprop="name">
-                                                                        23 апреля будут объявлены лауреаты премии «Глобальная энергия» 2015 года			
-                                                                    </span>
-                                                                </a>
-                                                                <small>01 Апрель 2015</small>
-                                                            </div>
+                                                            <?php if (!empty($news)) :?>
+                                                                <?php foreach ($news as $new) :?>
+                                                                    <div itemscope="" itemtype="http://schema.org/Article">
+                                                                        <a href="#" itemprop="url">
+                                                                            <span itemprop="name">
+                                                                                <?php echo $new['title']?>		
+                                                                            </span>
+                                                                        </a>
+                                                                        <small><?php echo \Yii::$app->formatter->asDatetime($new['updated_at'])?></small>
+                                                                    </div>
+                                                                <?php endforeach;?>
+                                                            <?php endif;?>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -97,38 +77,18 @@
                                                     <h3 class="sppb-addon-title" style="color:#404040;">Статьи</h3>
                                                     <div class="sppb-addon-content">
                                                         <div class="latestnews">
-                                                            <div itemscope="" itemtype="http://schema.org/Article">
-                                                                <a href="http://kirosgroup.ru/blog/78-tekhnologicheskoe-prisoedinenie-k-elektricheskim-setyam" itemprop="url">
-                                                                    <span itemprop="name">
-                                                                        ТЕХНОЛОГИЧЕСКОЕ ПРИСОЕДИНЕНИЕ К ЭЛЕКТРИЧЕСКИМ СЕТЯМ			
-                                                                    </span>
-                                                                </a>
-                                                                <small>01 Июнь 2015</small>
-                                                            </div>
-                                                            <div itemscope="" itemtype="http://schema.org/Article">
-                                                                <a href="http://kirosgroup.ru/blog/80-yuridicheskim-litsam-i-predprinimatelyam" itemprop="url">
-                                                                    <span itemprop="name">
-                                                                        ЮРИДИЧЕСКИМ ЛИЦАМ И ПРЕДПРИНИМАТЕЛЯМ			
-                                                                    </span>
-                                                                </a>
-                                                                <small>01 Июнь 2015</small>
-                                                            </div>
-                                                            <div itemscope="" itemtype="http://schema.org/Article">
-                                                                <a href="http://kirosgroup.ru/blog/86-iii-ezhegodnaya-mezhdunarodnaya-konferentsiya-startup-village" itemprop="url">
-                                                                    <span itemprop="name">
-                                                                        III Ежегодная Международная конференция Startup Village			
-                                                                    </span>
-                                                                </a>
-                                                                <small>30 Май 2015</small>
-                                                            </div>
-                                                            <div itemscope="" itemtype="http://schema.org/Article">
-                                                                <a href="http://kirosgroup.ru/blog/79-zaklyuchenie-dogovora-energosnabzheniya-s-energosbytom" itemprop="url">
-                                                                    <span itemprop="name">
-                                                                        ЗАКЛЮЧЕНИЕ ДОГОВОРА ЭНЕРГОСНАБЖЕНИЯ С ЭНЕРГОСБЫТОМ			
-                                                                    </span>
-                                                                </a>
-                                                                <small>26 Май 2015</small>
-                                                            </div>
+                                                            <?php if (!empty($articles)) :?>
+                                                                <?php foreach ($articles as $art) :?>
+                                                                    <div itemscope="" itemtype="http://schema.org/Article">
+                                                                        <a href="#" itemprop="url">
+                                                                            <span itemprop="name">
+                                                                                <?php echo $art['title']?>			
+                                                                            </span>
+                                                                        </a>
+                                                                        <small><?php echo \Yii::$app->formatter->asDatetime($art['updated_at'])?></small>
+                                                                    </div>
+                                                                <?php endforeach;?>
+                                                            <?php endif;?>
                                                         </div>
                                                     </div>
                                                 </div>
