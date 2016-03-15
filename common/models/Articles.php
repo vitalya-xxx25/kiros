@@ -120,14 +120,18 @@ class Articles extends \yii\db\ActiveRecord
         ];
     }
     
-    public function getArticlesBySectionId($sectionId) {
+    public function getArticlesBySectionId($sectionId, $limit = false) {
         $query = new \yii\db\Query();
-        $query->addSelect(['*'])
+        $query->addSelect(['a.*'])
             ->from ([Articles::tableName().' a'])
             ->innerJoin(Articles2sections::tableName().' a2s','a2s.sectionId = '.$sectionId)
             ->where('a.id = a2s.articleId')
-            ->orderBy(['sequenceNumber' => SORT_ASC])
-            ->limit(4);
+            ->orderBy(['sequenceNumber' => SORT_ASC]);
+        
+        if ($limit) {
+            $query->limit((int)$limit);
+        }
+        
         return $query->all();
     }
 }

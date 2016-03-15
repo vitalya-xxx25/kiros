@@ -56,8 +56,8 @@
                                                         <div class="latestnews">
                                                             <?php if (!empty($news)) :?>
                                                                 <?php foreach ($news as $new) :?>
-                                                                    <div itemscope="" itemtype="http://schema.org/Article">
-                                                                        <a href="#" itemprop="url">
+                                                                    <div itemscope="" itemtype="">
+                                                                        <a href="<?php echo \yii\helpers\Url::to(['/main/default/view-news', 'id' => $new['id']])?>" itemprop="url">
                                                                             <span itemprop="name">
                                                                                 <?php echo $new['title']?>		
                                                                             </span>
@@ -79,8 +79,8 @@
                                                         <div class="latestnews">
                                                             <?php if (!empty($articles)) :?>
                                                                 <?php foreach ($articles as $art) :?>
-                                                                    <div itemscope="" itemtype="http://schema.org/Article">
-                                                                        <a href="#" itemprop="url">
+                                                                    <div itemscope="" itemtype="">
+                                                                        <a href="<?php echo \yii\helpers\Url::to(['/main/default/view-article', 'id' => $art['id']])?>" itemprop="url">
                                                                             <span itemprop="name">
                                                                                 <?php echo $art['title']?>			
                                                                             </span>

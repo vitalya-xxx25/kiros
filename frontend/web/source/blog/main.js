@@ -81,10 +81,6 @@ jQuery(function($) {
             },
             success: function (response) {
                 
-                if ('undefined' == typeof response.data) {
-                    return;
-                }
-                
                 var data = $.parseJSON(response.data);
 
                 $('.post_rating .ajax-loader').hide();

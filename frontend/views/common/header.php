@@ -6,7 +6,7 @@
                     <div class="sp-module  bottom-8">
                         <div class="sp-module-content">
                             <div class="custom bottom-8">
-                                <p><img src="source/images/demo/logo.png" alt="" width="100" height="100"></p>
+                                <p><a href="/"><img src="/source/images/demo/logo.png" alt="" width="100" height="100"></a></p>
                             </div>
                         </div>
                     </div>
