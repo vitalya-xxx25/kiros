@@ -18,6 +18,9 @@ return [
         ],
     ],
     'components' => [
+        'request' => [
+            'baseUrl' => '',
+        ],
         'user' => [
             'identityClass' => 'common\models\User',
             'enableAutoLogin' => true,
