@@ -8,10 +8,11 @@ class DefaultController extends Controller
 {
     public function actionIndex()
     {
-        $this->layout = "bootstrap";
+        $this->layout   = "bootstrap";
+        $news           = \common\models\Articles::getArticlesBySectionId(1, 4);
+        $articles       = \common\models\Articles::getArticlesBySectionId(2, 4);
         
-        $news       = \common\models\Articles::getArticlesBySectionId(1, 4);
-        $articles   = \common\models\Articles::getArticlesBySectionId(2, 4);
+        \Yii::$app->view->params['pageTitle'] = 'Главная';
         
         return $this->render('index', [
             'news'      => $news,
@@ -34,6 +35,7 @@ class DefaultController extends Controller
                     break;
                 }
                 if ($currArtId == $art['id']) {
+                    \Yii::$app->view->params['pageTitle'] = $art['title'];
                     $selectedArts['curr'] = $art;
                 }
                 else {
@@ -60,11 +62,13 @@ class DefaultController extends Controller
     
     public function actionTarif() {
         $this->layout = "blog";
+        \Yii::$app->view->params['pageTitle'] = 'Тариф';
         return $this->render('tarif');
     }
     
     public function actionAbout() {
         $this->layout = "blog";
+        \Yii::$app->view->params['pageTitle'] = 'О нас';
         return $this->render('about');
     }
 }
