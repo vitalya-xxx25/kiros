@@ -100,9 +100,13 @@
                                                     <h3 class="sppb-addon-title" style="color:#404040;">Контакты</h3>
                                                     <div class="sppb-addon-content">
                                                         г. Москва, 1-й кирпичный переулок 4 корп 2 оф. 202<br>
+                                                        г. Севастополь, 299014, Камышовое шоссе, д.14Д<br /><br />
                                                         Генеральный директор Носов Константин Владимирович<br>
                                                         Моб: +7 978 080-12-81<br>
+                                                        Моб: +7 869 241 22-35<br>
                                                         E-mail: <a href="mailto:kirosgroup2011@gmail.com">kirosgroup2011@gmail.com</a>
+                                                        <br />
+                                                        <br />
                                                         <p>
                                                             <a title="ТАРИФЫ" href="<?php echo \yii\helpers\Url::to(['/main/default/tarif'])?>">ТАРИФЫ</a><br>
                                                             <a title="О КОМПАНИИ" href="<?php echo \yii\helpers\Url::to(['/main/default/about'])?>">О КОМПАНИИ</a>

@@ -19,7 +19,7 @@
                             <div class="custom">
                                 <div class="col-md-10 col-xs-12" style="text-align: right;">&nbsp;</div>
                                 <div class="col-md-10 col-xs-12" style="text-align: right; float: right;">
-                                    <span style="text-align: center; font-size: 16px;">Тел: +7 978 080-12-81&nbsp;</span>
+                                    <span style="text-align: center; font-size: 16px;">Тел: +7 978 080-12-81,&nbsp;&nbsp;+7 869 241 22-35</span>
                                 </div>
                             </div>
                         </div>

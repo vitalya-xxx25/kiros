@@ -11,7 +11,7 @@
     <meta charset="<?= Yii::$app->charset ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <?= Html::csrfMetaTags() ?>
-    <title><?= Html::encode($this->title) ?></title>
+    <title><?= Html::encode(isset($this->params['pageTitle']) ? $this->params['pageTitle'] : $this->title) ?></title>
     <?php $this->head() ?>
     <style type="text/css">
         body{font-family:PT Sans, sans-serif; font-size:14px; font-weight:normal; }
