@@ -23,15 +23,15 @@ class MainAsset extends  AssetBundle{
     ];
 
     public $js = [
-        'source/blog/button.acba75bebf25a5605514ffbb0e01d0eb.js',
-        'source/blog/pinit_main.js',
-        'source/blog/plusone.js',
-        'source/blog/widgets.js',
-        'source/blog/jquery-noconflict.js',
-        'source/blog/jquery-migrate.min.js',
-        'source/blog/caption.js',
-        'source/blog/jquery.sticky.js',
-        'source/blog/main.js',
+//        'source/blog/button.acba75bebf25a5605514ffbb0e01d0eb.js',
+//        'source/blog/pinit_main.js',
+//        'source/blog/plusone.js',
+//        'source/blog/widgets.js',
+//        'source/blog/jquery-noconflict.js',
+//        'source/blog/jquery-migrate.min.js',
+//        'source/blog/caption.js',
+//        'source/blog/jquery.sticky.js',
+//        'source/blog/main.js',
     ];
 
     public $depends = [

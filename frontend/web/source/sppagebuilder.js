@@ -2182,21 +2182,21 @@ jQuery(function($){
     "use strict";
  
     var sppbflickrPhotoStream = function ($el, options) {
-        var url = ['http://api.flickr.com/services/feeds/photos_public.gne?id=' + options.id + '&format=json&jsoncallback=?'].join('');
- 
-        return $.getJSON(url).done(function (data) {  
-
-          for (var i = 0; i < options.count; i = i + 1) {
-            var pic = data.items[i];
-
-            $("<img class='sppb-img-responsive' alt='"+pic.title+"' />")
-            .attr("src", pic.media.m)
-            .appendTo($el)
-            .wrap(options.container || '')
-            .wrap(['<a target="_blank" href="' + pic.link + '" title="' + pic.title + '"></a>'].join(''));
-          }
-
-        });
+//        var url = ['http://api.flickr.com/services/feeds/photos_public.gne?id=' + options.id + '&format=json&jsoncallback=?'].join('');
+// 
+//        return $.getJSON(url).done(function (data) {  
+//
+//          for (var i = 0; i < options.count; i = i + 1) {
+//            var pic = data.items[i];
+//
+//            $("<img class='sppb-img-responsive' alt='"+pic.title+"' />")
+//            .attr("src", pic.media.m)
+//            .appendTo($el)
+//            .wrap(options.container || '')
+//            .wrap(['<a target="_blank" href="' + pic.link + '" title="' + pic.title + '"></a>'].join(''));
+//          }
+//
+//        });
     };
  
     $.fn.sppbflickrPhotoStream = function (options) {

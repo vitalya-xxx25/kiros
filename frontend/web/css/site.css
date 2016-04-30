@@ -103,3 +103,15 @@ a.desc:after {
 .nav > li > form > button:hover {
     text-decoration: none;
 }
+.tab-content .tab-title {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 25px;
+    font-weight: bold;
+}
+table thead tr {
+    background: #F7F5F5;
+}
+.table-bordered > thead > tr > th, .table-bordered > thead > tr > td {
+    border-bottom-width: 1px;
+}

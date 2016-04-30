@@ -10,6 +10,7 @@
 <head>
     <meta charset="<?= Yii::$app->charset ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name='yandex-verification' content='6471e34b28b59376' />
     <?= Html::csrfMetaTags() ?>
     <title><?= Html::encode(isset($this->params['pageTitle']) ? $this->params['pageTitle'] : $this->title) ?></title>
     <?php $this->head() ?>

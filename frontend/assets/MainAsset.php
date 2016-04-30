@@ -24,16 +24,17 @@ class MainAsset extends  AssetBundle{
         'source/legacy.css',
         'source/template.css',
         'source/preset1.css',
+        'css/site.css',
     ];
 
     public $js = [
-        'source/jquery-noconflict.js',
-        'source/jquery-migrate.min.js',
-        'source/owl.carousel.min.js',
-        'source/addon.slider.js',
+//        'source/jquery-noconflict.js',
+//        'source/jquery-migrate.min.js',
+//        'source/owl.carousel.min.js',
+//        'source/addon.slider.js',
         'source/sppagebuilder.js',
-        'source/jquery.sticky.js',
-        'source/main.js',
+//        'source/jquery.sticky.js',
+//        'source/main.js',
     ];
 
     public $depends = [

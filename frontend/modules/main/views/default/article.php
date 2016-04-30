@@ -21,7 +21,7 @@
                         <div class="entry-header">
                             <dl class="article-info">
                                 <dt class="article-info-term"></dt>
-                                <dd class="createdby" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+                                <dd class="createdby" itemprop="author" itemscope="" itemtype="">
                                     <i class="fa fa-user"></i>
                                     <span itemprop="name" data-toggle="tooltip" title="" data-original-title="Автор: ">Super User</span>	
                                 </dd>
