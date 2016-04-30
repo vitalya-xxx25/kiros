@@ -18,19 +18,6 @@
                                 <div id="2016" class="tab-pane fade in active">
                                     <div class="tab-title">2016</div>
 
-                                    
-                                    <?php /* echo yii\widgets\Menu::widget([
-                                        'items' => [
-                                            ['label' => 'Главная', 'url' => ['site/index']],
-                                            ['label' => 'О компании', 'url' => ['site/about']],
-                                            ['label' => 'Услуги', 'url' => ['site/services']],
-                                            ['label' => 'Контакты', 'url' => ['site/contacts']],
-                                        ],
-                                        'activeCssClass'=>'active',
-                                        'firstItemCssClass'=>'fist',
-                                        'lastItemCssClass' =>'last',
-                                    ]); */?>
-                                    
                                     <?php echo $this->render('tarifs_docs/attachment_2'); ?>
                                     <br />
                                     <hr>

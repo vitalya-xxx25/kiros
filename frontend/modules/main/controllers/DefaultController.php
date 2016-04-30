@@ -63,7 +63,8 @@ class DefaultController extends Controller
     public function actionTarif() {
         $this->layout = "blog";
         \Yii::$app->view->params['pageTitle'] = 'Тариф';
-        return $this->render('tarif');
+        $sources = \frontend\modules\main\models\Tarifs::getSourcesMenu();
+        return $this->render('tarif2', ['sources' => $sources]);
     }
     
     public function actionAbout() {
