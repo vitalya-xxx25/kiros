@@ -14,7 +14,7 @@ class Tarifs
                         'template' => '<a href="{url}" data-toggle="modal" data-target="#1">{label}</a>',
                         'source' => [
                             'id' => '1',
-                            'url' => 'tarifs_docs/attachment_2',
+                            'url' => ['tarifs_docs/attachment_2'],
                             'type' => 'html',
                         ],
                     ],
@@ -24,7 +24,7 @@ class Tarifs
                         'template' => '<a href="{url}" data-toggle="modal" data-target="#2">{label}</a>',
                         'source' => [
                             'id' => '2',
-                            'url' => 'tarifs_docs/attachment_5',
+                            'url' => ['tarifs_docs/attachment_5'],
                             'type' => 'html',
                         ],
                     ],
@@ -34,7 +34,7 @@ class Tarifs
                         'template' => '<a href="{url}" data-toggle="modal" data-target="#3">{label}</a>',
                         'source' => [
                             'id' => '3',
-                            'url' => '/source/images/work_docs/DSC_0261.JPG',
+                            'url' => ['/source/images/work_docs/DSC_0261.JPG'],
                             'type' => 'img',
                         ],
                     ],
@@ -44,7 +44,7 @@ class Tarifs
                         'template' => '<a href="{url}" data-toggle="modal" data-target="#4">{label}</a>',
                         'source' => [
                             'id' => '4',
-                            'url' => 'tarifs_docs/attachment_7',
+                            'url' => ['tarifs_docs/attachment_7'],
                             'type' => 'html',
                         ],
                     ],
@@ -54,7 +54,7 @@ class Tarifs
                         'template' => '<a href="{url}" data-toggle="modal" data-target="#5">{label}</a>',
                         'source' => [
                             'id' => '5',
-                            'url' => 'tarifs_docs/tax_declaration_0',
+                            'url' => ['tarifs_docs/tax_declaration_3'],
                             'type' => 'html',
                         ],
                         'items' => [
@@ -64,7 +64,7 @@ class Tarifs
                                 'template' => '<a href="{url}" data-toggle="modal" data-target="#51">{label}</a>',
                                 'source' => [
                                     'id' => '51',
-                                    'url' => 'tarifs_docs/tax_declaration_1',
+                                    'url' => ['tarifs_docs/tax_declaration_3'],
                                     'type' => 'html',
                                 ],
                             ],
@@ -74,7 +74,7 @@ class Tarifs
                                 'template' => '<a href="{url}" data-toggle="modal" data-target="#52">{label}</a>',
                                 'source' => [
                                     'id' => '52',
-                                    'url' => 'tarifs_docs/tax_declaration_3',
+                                    'url' => ['tarifs_docs/tax_declaration_3'],
                                     'type' => 'html',
                                 ],
                             ],
@@ -84,7 +84,7 @@ class Tarifs
                                 'template' => '<a href="{url}" data-toggle="modal" data-target="#53">{label}</a>',
                                 'source' => [
                                     'id' => '53',
-                                    'url' => 'tarifs_docs/tax_declaration_4',
+                                    'url' => ['tarifs_docs/tax_declaration_4'],
                                     'type' => 'html',
                                 ],
                             ],
@@ -94,11 +94,48 @@ class Tarifs
                                 'template' => '<a href="{url}" data-toggle="modal" data-target="#54">{label}</a>',
                                 'source' => [
                                     'id' => '54',
-                                    'url' => 'tarifs_docs/tax_declaration_6',
+                                    'url' => ['tarifs_docs/tax_declaration_6'],
                                     'type' => 'html',
                                 ],
                             ],
                         ]
+                    ],
+                ],
+            ],
+            '2017' => [
+                'items' => [
+                    [
+                        'label' => 'Заявление об установлении тарифов на оказание услуг по передаче электрической энергии.', 
+                        'url' => '#',
+                        'template' => '<a href="{url}" data-toggle="modal" data-target="#2017_1">{label}</a>',
+                        'source' => [
+                            'id' => '2017_1',
+                            'url' => [
+                                '/source/images/work_docs/IMG-20160505-WA0000.jpg',
+                                '/source/images/work_docs/IMG-20160505-WA0001.jpg',
+                            ],
+                            'type' => 'img',
+                        ],
+                    ],
+                    [
+                        'label' => 'Приложение № 2 к предложению о размере цен (тарифов), долгосрочных параметров регулирования.', 
+                        'url' => '#',
+                        'template' => '<a href="{url}" data-toggle="modal" data-target="#2017_2">{label}</a>',
+                        'source' => [
+                            'id' => '2017_2',
+                            'url' => ['tarifs_docs/2017/attachment_2'],
+                            'type' => 'html',
+                        ],
+                    ],
+                    [
+                        'label' => 'Приложение № 5 к предложению о размере цен (тарифов), долгосрочных параметров регулирования.', 
+                        'url' => '#',
+                        'template' => '<a href="{url}" data-toggle="modal" data-target="#2017_3">{label}</a>',
+                        'source' => [
+                            'id' => '2017_3',
+                            'url' => ['tarifs_docs/2017/attachment_5'],
+                            'type' => 'html',
+                        ],
                     ],
                 ],
             ],

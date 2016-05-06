@@ -7,9 +7,19 @@
             </div>
             <div class="modal-body">
                 <?php if ('html' == $item['source']['type']) :?>
-                    <?php echo $this->render($item['source']['url']); ?>
+                    <?php if (is_array($item['source']['url'])) :?>
+                        <?php foreach ($item['source']['url'] as $url) :?>
+                            <?php echo $this->render($url); ?>
+                            <br />
+                        <?php endforeach;?>
+                    <?php endif;?>
                 <?php elseif ('img' == $item['source']['type']) :?>
-                    <img src="<?php echo $item['source']['url']?>" alt="" width="100%">
+                    <?php if (is_array($item['source']['url'])) :?>
+                        <?php foreach ($item['source']['url'] as $url) :?>
+                            <img src="<?php echo $url?>" alt="" width="100%">
+                            <br />
+                        <?php endforeach;?>
+                    <?php endif;?>
                 <?php endif;?>
             </div>
             <div class="modal-footer">

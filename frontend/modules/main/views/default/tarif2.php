@@ -35,6 +35,21 @@
                                 </div>
                             <div id="2017" class="tab-pane fade">
                                 <div class="tab-title">2017</div>
+                                <?php if (!empty($sources['2017'])) :?>
+                                    <div class="tab-content-menu">
+                                       <?php echo yii\widgets\Menu::widget($sources['2017']); ?>
+                                   </div>
+
+                                   <?php foreach ($sources['2017']['items'] as $item) :?>
+                                       <?php echo $this->render('tarif_module', ['item' => $item]); ?>
+
+                                       <?php if (isset($item['items'])) :?>
+                                           <?php foreach ($item['items'] as $subItem) :?>
+                                               <?php echo $this->render('tarif_module', ['item' => $subItem]); ?>
+                                           <?php endforeach;?>
+                                       <?php endif;?>
+                                   <?php endforeach;?>
+                               <?php endif;?>
                             </div>
                         </div>
                         </div>
